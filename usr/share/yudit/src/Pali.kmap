@@ -1,0 +1,36 @@
+// pali.kmap input method for yudit
+// 2006-08-29 jon bressie <box100@prodigy.net>
+//
+// this kmap uses the commonly known velthius
+// method of writing pali diacritics as its base.
+// only two letters deviate from the method. 
+//
+// layout was created for the dvorak keyboard.
+// this places all three types of 'n' in the top 
+// left corner of the keyboard (',.). however, it is
+// still plenty comfortable enough for qwerty users.
+
+// modified 2006-09-06 jon bressie
+// added support for dicritics on capital letters.
+
+// unicode values assigned to the keystrokes
+"AA=0x0100",
+"aa=0x0101",
+"II=0x012A",
+"ii=0x012B",
+"UU=0x016A",
+"uu=0x016B",
+",N=0x1E44", // velthius equivalent = "N
+",n=0x1E45", // velthius equivalent = "n
+"'N=0x00D1", // vel. eq. = ~N
+"'n=0x00F1", // vel. eq. = ~n
+".T=0x1E6C",
+".t=0x1E6D",
+".D=0x1E0C",
+".d=0x1E0D",
+".N=0x1E46",
+".n=0x1E47",
+".L=0x1E36",
+".l=0x1E37",
+".M=0x1E42",
+".m=0x1E43",

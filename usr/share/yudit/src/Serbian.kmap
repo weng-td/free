@@ -1,0 +1,159 @@
+// Created with Emacs for Yudit
+// 04/07/2001 Jernej Kovacic (jkovacic@email.si)
+// Mod: 19.05.2003. Strahinya Radich (mr99164@alas.matf.bg.ac.yu)
+// Additions and improvements welcome
+
+// Directly converts Latin "Yugoslav" characters from ISO 8859-2 into 
+// Serbian Cyrillic. Also converts lj, nj, dž correctly.
+
+// Strahinya Radich, 01.09.2003.:
+//   Added “en-dash”, “em-dash”, and the.
+//   inevitable “euro” sign.
+//   Commented out the “ambiguous” “lj”, “nj”, “dj”.
+//   For example, „ињекција“ and „инјекција“ are two
+//   different words, the last of which could not be
+//   entered easily with the “?+j” digraphs. Another examples are:
+//   „предјело“, „одједном“, etc.
+
+// Strahinya Radich, 20.05.2003.:
+//   Changed some ISO 8859-2 codes to 0xNN, since saving the file
+//   in UTF-8 messed them all up.
+
+// Strahinya Radich, 19.05.2003.:
+//   Adjusted for more input sequences: dual (CX = hard CH),
+//   and symbolic (C< = hard CH). Also added the diacritical
+//   marks, such as quotes (,,``) and apostrophes (`').
+
+// This part added by Strahinya Radich
+"--=0x2013",    // – = EN DASH
+"---=0x2014",   // — = EM DASH
+"E/=0x20AC",    // € = EURO SIGN
+",,=0x201E",    // „ = DOUBLE LOW-9 QUOTATION MARK = <Q>
+"``=0x201C",    // “ = LEFT DOUBLE QUOTATION MARK = </Q>
+"\`=0x2018",    // ‘ = LEFT SINGLE QUOTATION MARK
+"'=0x2019",     // ’ = RIGHT SINGLE QUOTATION MARK
+// End of part
+
+// First the full line of Capital letters for clarity:
+
+// This part added by Strahinya Radich
+"C< =0x0427",   // CYRILLIC CAPITAL LETTER HARD CH
+"CX =0x0427",   // CYRILLIC CAPITAL LETTER HARD CH
+"Cx =0x0427",   // CYRILLIC CAPITAL LETTER HARD CH
+"C' =0x040B",   // CYRILLIC CAPITAL LETTER SOFT CH
+"CY =0x040B",   // CYRILLIC CAPITAL LETTER SOFT CH
+"Cy =0x040B",   // CYRILLIC CAPITAL LETTER SOFT CH
+"DZ<=0x040F",   // CYRILLIC CAPITAL LETTER HARD DZH
+"Dz<=0x040F",   // CYRILLIC CAPITAL LETTER HARD DZH
+"DX =0x040F",   // CYRILLIC CAPITAL LETTER HARD DZH
+"Dx =0x040F",   // CYRILLIC CAPITAL LETTER HARD DZH
+"DJ =0x0402",   // CYRILLIC CAPITAL LETTER SOFT DJ
+"Dj =0x0402",   // CYRILLIC CAPITAL LETTER SOFT DJ
+"DY =0x0402",   // CYRILLIC CAPITAL LETTER SOFT DJ
+"Dy =0x0402",   // CYRILLIC CAPITAL LETTER SOFT DJ
+"LY =0x0409",	// CYRILLIC CAPITAL LETTER LJ (L+Y)
+"Ly =0x0409",	// CYRILLIC CAPITAL LETTER LJ (L+y)
+"Q  =0x0409",	// CYRILLIC CAPITAL LETTER LJ
+"NY =0x040A", 	// CYRILLIC CAPITAL LETTER NJ (N+Y)
+"Ny =0x040A", 	// CYRILLIC CAPITAL LETTER NJ (N+y)
+"W  =0x040A", 	// CYRILLIC CAPITAL LETTER NJ
+"S< =0x0428",	// CYRILLIC CAPITAL LETTER SH
+"SX =0x0428",	// CYRILLIC CAPITAL LETTER SH
+"Sx =0x0428",	// CYRILLIC CAPITAL LETTER SH
+"Z< =0x0416",	// CYRILLIC CAPITAL LETTER ZH
+"ZX =0x0416",	// CYRILLIC CAPITAL LETTER ZH
+"Zx =0x0416",	// CYRILLIC CAPITAL LETTER ZH
+"Y  =0x0417",   // CYRILLIC CAPITAL LETTER Z
+// End of part
+
+"A =0x0410",   // CYRILLIC CAPITAL LETTER A 
+"B =0x0411",   // CYRILLIC CAPITAL LETTER B
+"C =0x0426",    // CYRILLIC CAPITAL LETTER C
+"0xC8=0x0427",  // CYRILLIC CAPITAL LETTER HARD CH
+"0xC6=0x040B",  // CYRILLIC CAPITAL LETTER SOFT CH
+"D =0x0414",    // CYRILLIC CAPITAL LETTER DE
+"D0xAE=0x040F", // CYRILLIC CAPITAL LETTER HARD DZH (D+ZH)
+"D0xBE=0x040F", // CYRILLIC CAPITAL LETTER HARD DZH (D+zh)
+"0xD0=0x0402",  // CYRILLIC CAPITAL LETTER SOFT DJ
+"E =0x0415",    // CYRILLIC CAPITAL LETTER E
+"F =0x0424",	// CYRILLIC CAPITAL LETTER F
+"G =0x0413",	// CYRILLIC CAPITAL LETTER G
+"H =0x0425",	// CYRILLIC CAPITAL LETTER H
+"I =0x0418", 	// CYRILLIC CAPITAL LETTER I
+"J =0x0408",	// CYRILLIC CAPITAL LETTER J
+"K =0x041A", 	// CYRILLIC CAPITAL LETTER K
+"L =0x041B", 	// CYRILLIC CAPITAL LETTER L
+// Commented out by Strahinya Radich
+//"LJ=0x0409",	// CYRILLIC CAPITAL LETTER LJ (L+J)
+//"Lj=0x0409",	// CYRILLIC CAPITAL LETTER LJ (L+j)
+"M =0x041C", 	// CYRILLIC CAPITAL LETTER M
+"N =0x041D", 	// CYRILLIC CAPITAL LETTER N
+// Commented out by Strahinya Radich
+//"NJ=0x040A", 	// CYRILLIC CAPITAL LETTER NJ (N+J)
+//"Nj=0x040A",	// CYRILLIC CAPITAL LETTER NJ (N+j)
+"O =0x041E", 	// CYRILLIC CAPITAL LETTER O
+"P =0x041F", 	// CYRILLIC CAPITAL LETTER P
+"R =0x0420", 	// CYRILLIC CAPITAL LETTER R
+"S =0x0421", 	// CYRILLIC CAPITAL LETTER S
+"0xA9=0x0428",	// CYRILLIC CAPITAL LETTER SH
+"T =0x0422", 	// CYRILLIC CAPITAL LETTER T
+"U =0x0423", 	// CYRILLIC CAPITAL LETTER U
+"V =0x0412",	// CYRILLIC CAPITAL LETTER V
+"Z =0x0417",	// CYRILLIC CAPITAL LETTER Z
+"0xAE=0x0416",	// CYRILLIC CAPITAL LETTER ZH
+
+// Then the same thing in lower case:
+
+// This part added by Strahinya Radich
+"c< =0x0447",   // CYRILLIC SMALL LETTER HARD CH
+"cx =0x0447",   // CYRILLIC SMALL LETTER HARD CH
+"c' =0x045B",   // CYRILLIC SMALL LETTER SOFT CH
+"cy =0x045B",   // CYRILLIC SMALL LETTER SOFT CH
+"dz<=0x045F",   // CYRILLIC SMALL LETTER HARD DZH
+"dx =0x045F",   // CYRILLIC SMALL LETTER HARD DZH
+// Commented out by Strahinya Radich
+//"dj =0x0452",   // CYRILLIC SMALL LETTER SOFT DJ
+"dy =0x0452",   // CYRILLIC SMALL LETTER SOFT DJ
+"ly =0x0459",	// CYRILLIC SMALL LETTER LJ (l+Y)
+"q  =0x0459",	// CYRILLIC SMALL LETTER LJ
+"ny =0x045A", 	// CYRILLIC SMALL LETTER NJ (n+y)
+"w  =0x045A", 	// CYRILLIC SMALL LETTER NJ
+"s< =0x0448",	// CYRILLIC SMALL LETTER SH
+"sx =0x0448",	// CYRILLIC SMALL LETTER SH
+"z< =0x0436",	// CYRILLIC SMALL LETTER ZH
+"zx =0x0436",	// CYRILLIC SMALL LETTER ZH
+"y  =0x0437",   // CYRILLIC SMALL LETTER Z
+// End of part
+
+"a =0x0430",   // CYRILLIC SMALL LETTER A 
+"b =0x0431",   // CYRILLIC SMALL LETTER B
+"c =0x0446",    // CYRILLIC SMALL LETTER C
+"0xE8=0x0447",  // CYRILLIC SMALL LETTER HARD CH
+"0xE6=0x045B",  // CYRILLIC SMALL LETTER SOFT CH
+"d =0x0434",    // CYRILLIC SMALL LETTER DE
+"d0xBE=0x045F", // CYRILLIC SMALL LETTER HARD DZH (d+zh)
+"0xF0=0x0452",  // CYRILLIC SMALL LETTER SOFT DJ
+"e =0x0435",    // CYRILLIC SMALL LETTER E
+"f =0x0444",	// CYRILLIC SMALL LETTER F
+"g =0x0433",	// CYRILLIC SMALL LETTER G
+"h =0x0445",	// CYRILLIC SMALL LETTER H
+"i =0x0438", 	// CYRILLIC SMALL LETTER I
+"j =0x0458",	// CYRILLIC SMALL LETTER J
+"k =0x043A", 	// CYRILLIC SMALL LETTER K
+"l =0x043B", 	// CYRILLIC SMALL LETTER L
+// Commented out by Strahinya Radich
+//"lj=0x0459",	// CYRILLIC SMALL LETTER LJ (l+j)
+"m =0x043C", 	// CYRILLIC SMALL LETTER M
+"n =0x043D", 	// CYRILLIC SMALL LETTER N
+// Commented out by Strahinya Radich
+//"nj=0x045A",	// CYRILLIC SMALL LETTER NJ (n+j)
+"o =0x043E", 	// CYRILLIC SMALL LETTER O
+"p =0x043F", 	// CYRILLIC SMALL LETTER P
+"r =0x0440", 	// CYRILLIC SMALL LETTER R
+"s =0x0441", 	// CYRILLIC SMALL LETTER S
+"0xB9=0x0448",	// CYRILLIC SMALL LETTER SH
+"t =0x0442", 	// CYRILLIC SMALL LETTER T
+"u =0x0443", 	// CYRILLIC SMALL LETTER U
+"v =0x0432",	// CYRILLIC SMALL LETTER V
+"z =0x0437",	// CYRILLIC SMALL LETTER Z
+"0xBE=0x0436",	// CYRILLIC SMALL LETTER ZH

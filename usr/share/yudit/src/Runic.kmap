@@ -1,0 +1,51 @@
+// -----------------------------------------------------------------------
+// ᚦᛖ᛫ᛞᚹᚫᚱᛞ᛫ᚱᚢᚾᛖᛋ᛬ᚩᚱ᛬ᚫ᛫ᛈᚩᛁᚾᛏᛚᛖᛋᛋ᛫ᛖᚾᛞᛠᚢᚩᚢᚱ᛬ᛒᛖᛁᛝ᛫ᚦᛖ᛫ᛈᚱᚩᛞᚢᚳᛏ᛫ᚩᚠ᛫ᚻᚫᛚᚠ᛫ᚫᚾ᛫ᚻᚩᚢᚱᛋ
+// ᛖᛞᛁᛏᛁᛝ᛫ᛞᚩᚾᛖ᛫ᛒᚣ᛫ᛞᚫᚢᛁᛞ᛫ᚩᚠᛏᛖᛞᚫᛚ᛫ᚩᚠ᛫ᚩᛋᛚᚩ᛬ᚾᚩᚱᚹᚫᚣ᛫ᚫᚾᛞ᛫ᛈᚢᛒᛚᛁᛋᚻᛖᛞ᛫ᛒᚣ᛫ᚣᚢᛞᛁᛏ᛫ᚩᚱᚷ᛬
+// -----------------------------------------------------------------------
+// Dwarf Runes from The Hobbit for the Unicode editor Yudit
+// 2003-03-02 david@start.no
+// Borrowed from http://heima.olivant.fo/~styrheim/tools/runes/rtable.html
+// -----------------------------------------------------------------------
+// Changes: 
+//    None
+// -----------------------------------------------------------------------
+
+//"a=0x16A8",	// ᚨ RUNIC LETTER ANSUZ A
+"a=0x16AB",	// ᚫ RUNIC LETTER AESC
+"b=0x16D2",	// ᛒ RUNIC LETTER BERKANAN BEORC BJARKAN B
+"c=0x16B3",	// ᚳ RUNIC LETTER CEN
+"d=0x16DE",	// ᛞ RUNIC LETTER DAGAZ DAEG D
+"e=0x16D6",	// ᛖ RUNIC LETTER EHWAZ EH E
+"f=0x16A0",	// ᚠ RUNIC LETTER FEHU FEOH FE F
+"g=0x16B7",	// ᚷ RUNIC LETTER GEBO GYFU G
+"h=0x16BB",	// ᚻ RUNIC LETTER HAEGL H
+"i=0x16C1",	// ᛁ RUNIC LETTER ISAZ IS ISS I
+"j=0x16C1",	// ᛁ RUNIC LETTER ISAZ IS ISS I
+"k=0x16B4",	// ᚴ RUNIC LETTER KAUN K - NOT THE K THAT TOLKIEN USED
+"l=0x16DA",	// ᛚ RUNIC LETTER LAUKAZ LAGU LOGR L
+"m=0x16D7",	// ᛗ RUNIC LETTER MANNAZ MAN M
+"n=0x16BE",	// ᚾ RUNIC LETTER NAUDIZ NYD NAUD N
+"o=0x16A9",	// ᚩ RUNIC LETTER OS O
+"p=0x16C8",	// ᛈ RUNIC LETTER PERTHO PEORTH P
+"q=0x16B3 0x16B9",	// TOLKIEN USED CW INSTEAD OF Q
+"r=0x16B1",	// ᚱ RUNIC LETTER RAIDO RAD REID R
+"s=0x16CB",	// ᛋ RUNIC LETTER SIGEL LONG-BRANCH-SOL S
+"t=0x16CF",	// ᛏ RUNIC LETTER TIWAZ TIR TYR T
+"u=0x16A2",	// ᚢ RUNIC LETTER U
+"v=0x16A2",	// ᚢ RUNIC LETTER URUZ UR U
+"w=0x16B9",	// ᚹ RUNIC LETTER WUNJO WYNN W → 01BF ƿ latin letter wynn
+"x=0x16D8",	// ᛘ RUNIC LETTER LONG-BRANCH-MADR M
+"y=0x16A3",	// ᚣ RUNIC LETTER YR
+"z=0x16E3",	// ᛣ RUNIC LETTER CALC
+
+//  COMPOUND CHARACTERS
+"th=0x16A6",	// ᚦ RUNIC LETTER THURISAZ THURS THORN → 00FE þ latin small letter thorn
+"ng=0x16DD",	// ᛝ RUNIC LETTER ING
+"ee=0x16DF",	// ᛟ RUNIC LETTER OTHALAN ETHEL O
+"ea=0x16E0",	// ᛠ RUNIC LETTER EAR
+//"st=0x0000",	// N/A, KIND OF LOOKS LIKE ᛞ, BUT NOT QUITE
+"eo=Z",		// A Z. Why not?
+
+".=0x16EB",	// ᛫ RUNIC SINGLE PUNCTUATION (SPACE)
+":=0x16EC",	// ᛬ RUNIC MULTIPLE PUNCTUATION (COMMA)
+		//   TOLKIEN USED THREE DOTS AS A PERIOD.

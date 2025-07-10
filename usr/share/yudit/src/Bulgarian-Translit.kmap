@@ -1,0 +1,79 @@
+//
+// Bulgarian-Translit.kmap for Yudit
+// Alex Izvorski <aizvorski@gmail.com>
+// 2007-07-14
+//
+// notes: this is how i would normally transliterate bulgarian in english.
+// most assignments are obvious.
+// you just have to remember that q=hard sign (looks the same, just flipped upside down) and j=short-i, and a number of other letters like jq ju ja fall naturally into place from that. 
+// the complex consonants zh ch sh sht ts should be obvious.
+// w is a redundant v (not in english, but this might help german speakers for example), and y is a redundant i (so you can happily use either at the end of words).  c is a redundant ts, which is actually not a great assignment in english because often c=k.  x is unused.
+// a very few words would be problematic to enter, e.g vqzhod as "vqz <backspace>hod", similarly razhod, razhodka, proizhod, otstrani, etc.
+//
+"A=0x0410",
+"B=0x0411",
+"V=0x0412",
+"W=0x0412", // alternate V
+"G=0x0413",
+"D=0x0414",
+"E=0x0415",
+"ZH=0x0416", // ZH
+"Z=0x0417",
+"I=0x0418",
+"Y=0x0418", // alternate I
+"J=0x0419",
+"K=0x041A",
+"L=0x041B",
+"M=0x041C",
+"N=0x041D",
+"O=0x041E",
+"P=0x041F",
+"R=0x0420",
+"S=0x0421",
+"T=0x0422",
+"U=0x0423",
+"F=0x0424",
+"H=0x0425",
+"TS=0x0426", // TS
+"C=0x0426", // alternate TS
+"CH=0x0427", // CH
+"SH=0x0428", // SH
+"SHT=0x0429", // SHT
+"Q=0x042A", // Q HARD SIGN
+"JQ=0x042C", // JQ SOFT SIGN
+"JU=0x042E", // JU
+"JA=0x042F", // JA
+
+"a=0x0430",
+"b=0x0431",
+"v=0x0432",
+"w=0x0432",
+"g=0x0433",
+"d=0x0434",
+"e=0x0435",
+"zh=0x0436",
+"z=0x0437",
+"i=0x0438",
+"y=0x0438",
+"j=0x0439",
+"k=0x043A",
+"l=0x043B",
+"m=0x043C",
+"n=0x043D",
+"o=0x043E",
+"p=0x043F",
+"r=0x0440",
+"s=0x0441",
+"t=0x0442",
+"u=0x0443",
+"f=0x0444",
+"h=0x0445",
+"ts=0x0446",
+"c=0x0446",
+"ch=0x0447",
+"sh=0x0448",
+"sht=0x0449",
+"q=0x044A",
+"jq=0x044C",
+"ju=0x044E",
+"ja=0x044F",

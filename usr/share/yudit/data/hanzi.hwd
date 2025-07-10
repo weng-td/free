@@ -1,0 +1,355 @@
+#HWD 1.0  DO NOT REMOVE THIS LINE
+# Machine Generated, but editable file.
+# Memory Mappable Handwriting Data
+# Converted from hanzidata.h by convert.pl
+#
+# NOT RECOMMENDED FORMAT FOR HAND-MADE DATA
+# Gaspar Sinai <gsinai@yudit.org>
+# 2001-11-28 08:41:00
+#
+#   stroke      character   
+#   count         utf-8         Stroke Desc. 
+#   <---->[space]<---->[space]<----------------->[\n]
+#   2Bytes       N bytes      Variable Bytecount
+#
+# Strokes Desc
+# * This is from JStroke. (TDR) is Todd's JavaDict format.
+# * One stroke is a capital letter that might 
+#   be followed by a small letter, in case of curves.
+# * Capital and small letters have the same meaning: angle.
+# * Strokes are in order packed one after the other
+#   
+#   A or a TDR='1' CLK=07:30 DEG=225
+#   B or b TDR='2' CLK=06:00 DEG=180
+#   C or c TDR='3' CLK=04:30 DEG=135
+#   D or d TDR='4' CLK=09:00 DEG=270 
+#   F or e TDR='6' CLK=03:00 DEG=090 
+#   G or f TDR='7' CLK=10:30 DEG=315 
+#   H or h TDR='8' CLK=12:00 DEG=360 
+#   I or i TDR='9' CLK=01:30 DEG=045 
+#   J or j TDR='x' down   06:00 then 07:30 
+#   K or k TDR='y' down   06:00 then 04:30 
+#   L or l TDR='c' down   06:00 then 03:00 
+#   M or m TDR='b' across 03:00 then 06:00 
+#
+#   Notes:
+#       TDR is the JavaDict format. 
+#       JavaDict does not pack, it has spaces.  
+#
+#   After the last stroke there can be an extra filter.  
+#   Filters use window coordinate system so the upper 
+#   left corcer is the origo. Filter signals are
+#   calcualted by substrating one location-or-length
+#   from another.  Filters start at '|'. Generally 
+#       <nane-1><strike-1><-sign><nane-2><strike-2>
+#   If a filter is followed by '!' that makes the filter 
+#
+#   stronger.
+#   Filter names:
+#
+#   x1 stroke 0 x-start 
+#   y2 stroke 1 y-start
+#   i1 stroke 0 x-end 
+#   j1 stroke 0 y-end 
+#   a1 stroke 0 x-middle 
+#   b1 stroke 0 y-middle 
+#   l3 stroke 2 length 
+#   - 
+#   ' ' new filter follows
+#   '|' new filter set starts
+#
+01 一 F
+02 人 AC
+02 儿 JL
+02 二 FF
+02 七 IL
+02 八 AC
+02 九 AFbfh
+02 十 FB
+02 了 FaBg
+02 几 JFbf
+02 丁 FBg
+03 也 FbBBf
+03 大 FAC
+03 么 AAfC
+03 习 FbCI
+03 三 FFF
+03 下 FBC
+03 女 BcAF
+03 子 FaBgF
+03 个 ACB
+03 口 BMF
+03 工 FBF
+03 小 BgAC
+03 上 BFF
+04 不 FABC
+04 友 FAFaC
+04 夫 FFAC
+04 书 FbFbBC
+04 车 FAfBF
+04 王 FFBF
+04 比 ABfABf
+04 中 BFbFB
+04 日 BFbFF
+04 什 ABFB
+04 气 AFFFk
+04 少 BACA
+04 五 FBFbF
+04 见 BMAL
+04 六 CFAC
+04 认 CIbiAC
+04 介 ACJB
+04 文 CFBdC
+04 互 FAfFaF
+04 太 FACC
+04 云 CFAfC
+04 毛 AFFBf
+04 公 ACAfC
+04 从 ACAC
+04 分 ACFbgA
+04 以 BiCBaC
+04 天 FFAC
+04 巴 MBFBfh
+04 午 AFFB
+04 长 AFBiC
+04 水 BgFaAC
+05 他 ABFbBBf
+05 叫 BFbFBfB
+05 们 ABCBFb
+05 对 FaCFBC
+05 生 AFFBF
+05 汉 CFIFaC
+05 本 FBACF
+05 外 AFaCBC
+05 号 BMFFAfag
+05 四 BMALF
+05 用 JFbgFFB
+05 去 FBFAfC
+05 写 AFaFBfbgF
+05 北 FBIAL
+05 兰 CAFFF
+05 电 BMFFL
+05 古 FBBMF
+05 卡 BFFBC
+05 东 FAfBgAC
+05 司 FbgFBMF
+05 旧 BBMFF
+05 白 ABMFF
+05 打 FBgIFBg
+05 加 FbgJBMF
+05 半 CAFFB
+05 务 AFaCFbgA
+06 好 BcAFFaJF
+06 吗 BFbFFbBfbF
+06 妈 BcAFFbBfbF
+06 她 BcAFFbBBf
+06 忙 ACBCFBf
+06 纸 AfAiIAbFC
+06 那 FjFFJFbfbB
+06 老 FBFAABf
+06 师 BJFBFbB
+06 地 FBIFbBBf
+06 欢 FaCAFaAC
+06 吸 BMFAFafaC
+06 问 CBMBMF
+06 在 FABFBF
+06 多 AFaCAFaC
+06 再 FBFbgFFB
+06 先 AFBFJL
+06 名 AFaCBMF
+06 字 CAFaFaBgF
+06 买 FaCCFAC
+06 有 FABFjFF
+06 行 AABFFBg
+06 当 BCAMFF
+06 杂 AFbfFBgAC
+06 百 FABMFF
+06 西 FBFbgJLF
+06 衣 CFAFiAC
+06 件 ABAFFB
+06 红 AfAiIFBF
+06 场 FBIFafbgAA
+06 回 BMBMFF
+06 华 ABABfhFB
+06 页 FABMJC
+06 同 BMgFBMF
+06 色 AFaMBFBfh
+06 后 AJFBMF
+06 米 CAFBAC
+06 休 ABFBAC
+06 会 ACFFAfC
+06 吃 BMFAFFafh
+06 早 BMFFFB
+07 你 ABAFaJAC
+07 我 AFBFCAC
+07 弟 CAFbFBfbBA
+07 这 CFACCFafaF
+07 报 FBgFFaBFaC
+07 利 AFBACBB
+07 时 BFbFFFBC
+07 进 FFABCFafaF
+07 迎 ABiFbgBCFafaF
+07 坐 ACACFBF
+07 层 MFAFFAfC
+07 还 FABCCFafaF
+07 词 CFFbgFBMF
+07 识 CBBMFAC
+07 来 FCAFBAC
+07 男 BMFBFFbgA
+07 作 ABAFBFF
+07 没 CCIJFbfFaC
+07 住 ABCFFBF
+07 告 AFBFBMF
+07 诉 CFbiAJFBC
+07 系 AAfAfCBgAC
+07 志 FBFACfCC
+07 里 BMFFFBF
+07 医 FAFFACL
+07 邮 BMFBFFbfbB
+07 局 MFJFbgBMF
+07 听 BMFAJFB
+07 两 FBFbgACAC
+07 条 AFaCFBgAC
+07 张 MFBfbgAFBiC
+07 找 FBgIFBciAC
+07 员 BMFBMJC
+07 汶 CCCiCFAC
+07 言 CFFFBMF
+07 位 ABCFCAF
+07 冷 CCiACCFaC
+07 吧 BMFMBFBfh
+07 走 FBFBFAC
+07 饭 AFaBiAJFaC
+07 花 FBBABABfh
+07 每 AFBfFbgFCC
+07 床 CFJFBAC
+08 呢 BFbFFbFBABf
+08 爸 ACACFbBFBfh
+08 朋 JFbFFJFbFF
+08 的 ABFbFFAFbC
+08 国 BFbFFBFCF
+08 学 CBABFaFaJF
+08 图 BFbAFaCCCF
+08 姓 BcAFAFFBF
+08 舍 ACFFBBMF
+08 画 FBMFBFLB
+08 典 BMFBBFAC
+08 现 FFBFBMAL
+08 英 FBABMFBaC
+08 法 CCIFBFAfC
+08 店 CFABFBMF
+08 绍 AfAiIFbgABMF
+08 和 AFBACBMF
+08 妹 BcAFFFBAC
+08 姐 BcAFBMFFF
+08 京 CFBMFBgAC
+08 厕 FABMACBBg
+08 所 AJMFAJFB
+08 话 CIbiAFBBMF
+08 波 CFIFaJBFaC
+08 帕 BFbgBABMFF
+08 卖 FBFaFFFAC
+08 咖 BMFFbgJBMF
+08 服 JFbFFFaBFaC
+08 衬 CFaBACFBgC
+08 衫 CFaBACAAA
+08 经 AfAiIFaCFBF
+08 刻 CFAfAACBBg
+08 实 CAFaCCFAC
+08 侨 ABAFACJB
+08 事 FBMFMFFBg
+08 表 FFBFABiAC
+08 念 ACCFaABfhCC
+08 杯 FBACFABC
+09 很 AABFbFFBAC
+09 是 BFbFFFBFAC
+09 哪 BFbFFjFFJFbfbB
+09 语 CBFBFbFBFbF
+09 看 AFFABFbFFF
+09 茶 FBAACFJAC
+09 客 CAFaAFaCBMF
+09 贵 BMFBFBMAC
+09 院 MBCAFaFFAL
+09 说 CIbiCABMFJL
+09 孩 FaBgICFAfAAC
+09 给 AfAiIACFBMF
+09 信 ABCFFFBMF
+09 相 FBACBMFFF
+09 览 BBAFCBMAL
+09 室 CAFaFAfCFBF
+09 美 CAFFBFFAC
+09 南 FABFbgCAFFB
+09 穿 CAFaACFAfBgA
+09 点 BFBMFACCC
+09 差 CAFFFAFBF
+09 钟 AFFFBiBMFB
+09 前 CAFBFbgFFBBg
+09 食 ACCMFFBiAC
+09 觉 CCAAFaBMABfh
+09 要 FBMBBFFAcBa
+10 都 FBFABFbFFFbfbB
+10 哥 FBFbFBFBFbFB
+10 高 CFBFbFBFbBFbF
+10 笔 AFCAFCAFFBf
+10 谁 CBABCFFFBF
+10 请 CBFFBFBFjFF
+10 烟 CJACBMFFAC
+10 留 ABiCFaABMFBF
+10 啊 BMFFagBFBMFBg
+10 家 CAFaFACbgAAAC
+10 爱 ACCAAFaFAFaC
+10 阅 CBFagCABMFJL
+10 荷 FCAABFBMFBg
+10 酒 CCIFBFbgJLFF
+10 班 FFBIBJFFBF
+10 剧 FaFJFBBMFBBg
+10 借 ABFBBFBMFF
+10 座 CFJACACFBF
+10 课 CIbiBMFFFBAC
+10 验 FbBfbFACFCCAF
+10 海 CCCiAFBfFbgFCC
+10 真 FABMFFFFAC
+10 热 FBgIJFbchCACCC
+10 起 FBFBFACMFBfh
+10 候 ABBMFAFFAC
+10 息 ABMFFFABfhCC
+10 桔 FBACFBFBMF
+10 瓶 CAFFJBFBiFbfhC
+11 您 ABAFaJACABfhCC
+11 宿 CBFaABFABMFF
+11 常 BCAAFaBMFBFbgB
+11 银 AFFFBiMFFBiAC
+11 教 FBFAFaJFAFJC
+11 敢 MFBBFFIAFJC
+11 馆 AFaBiCAFaBMFMF
+11 商 CFCABFbgACBMF
+11 票 FBFbgJLFFFBgAC
+11 授 FBgIACCACFaFaC
+11 啡 BMFBFFFBFFF
+11 啤 BMFABMFFJFB
+11 晚 BMFFAFaBMFJBfh
+11 理 FFBIBMFFBFF
+11 绿 AfAiIMFFBgFIAC
+11 黄 FBBFBMFBFAC
+11 职 FBBFFIBMFAC
+11 堂 BCAAFaBMFFBF
+12 谢 CBABFbFFFAFBA
+12 喝 BMFBMFFCFjCAL
+12 喂 BMFBMFBFFBiAC
+12 裙 CFaBACMFFJBMF
+12 裤 CFaBACCFJFAfBF
+12 鲁 FaABMFBFFBMFF
+12 程 AFBACBMFFFBF
+12 黑 BMCAFFBFABCC
+12 等 AFCAFCFBFFBgC
+12 喜 FBFBMFCAFBMF
+13 想 FBACBMFFFACfCC
+13 新 CFCAFFBgACAJFB
+13 蓝 FBBBJJFCBMBBF
+13 跟 BMFBFBFMFFBiAC
+13 睡 BMFFFAFFBBFBF
+13 路 BMFBFFBAFaCBMF
+15 颜 CFCAJFAAAFABMJC
+15 影 BMFFCFBMFBgACAAA
+15 懂 ABCFBBAFBMFFFBF
+15 题 BFbFFFBFACFABMJC

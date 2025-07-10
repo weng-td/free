@@ -1,0 +1,115 @@
+//Farsi.kmap for Yudit by Hamed Seyed-allaei ‫سید حامد سیدعلایی‬  <allaei@sissa.it>
+//ISIRI 2901-1994 Layout
+// The alphabet   ‮الفبای فارسی ‬   
+
+"q=0x0636",          // zad (ض) 
+"w=0x0635",          // sad (ص)
+"e=0x062b",          // se with 3 dots (ث)
+"r=0x0642",          // ghaf (ق)
+"t=0x0641",          // feh (ف)
+"y=0x063a",          // ghain  (غ)
+"u=0x0639",          // ain (ع)
+"i=0x0647",          // heh (ه)
+"o=0x062e",          // kheh (خ)
+"p=0x062d",          // heh (ح)
+"[=0x062c",          // jeem (ج)
+"]=0x0686",          // che (چ)
+"a=0x0634",          // sheen (ش)
+"s=0x0633",          // seen (س)
+"d=0x06cc",          //farsi  yeh (ی)
+"f=0x0628",          // beh (ب)
+"g=0x0644",          // lam (ل)
+"h=0x0627",          // alef (ا)
+"j=0x062a",          // teh (ت)
+"k=0x0646",          // noon (ن)
+"l=0x0645",          // meem (م)
+";=0x06a9",          //Farsi  kaf (ک)
+"'=0x06af",          // gaf (گ) 
+"z=0x0638",          // za  (ظ)
+"x=0x0637",         //ta  (ط)
+"c=0x0632",          //ze (ز)
+"v=0x0631",          // re (ر)
+"b=0x0630",   //zal (ذ)
+"n=0x062f",          //dal  (د)
+"m=0x067e",          //pe   (پ)
+",=0x0648",          // waw (و)
+".=0x002e",          // noghteh (.)
+
+
+"Q=0x0652",          //Farsi saken ( ْ )
+"W=0x064c",          //do pish ( ٌ)
+"E=0x064d",          //do zir  ( ٍ)
+"R=0x064b",          //do zebar ( ً)
+"T=0x064f",           //pish ( ُ)
+"Y=0x0650",          //zir   ( ِ)
+"U=0x064e",          //zebar ( َ)
+"I=0x651",            //tashdid ( ّ)
+"O=0x05b",   //[ 
+"P=0x05d",   //]
+"{=0x07b",   //{
+"}=0x07d",    //}
+"A=0x0624",          //waw with hamze  (ؤ) 
+"S=0x0626",          //ye with  hamze  (ئ)
+"D=0x064a",          // Arabic ye with dots  (ي)
+"F=0x0625",          // alef with hamzeh under ( إ)
+"G=0x0654",         //Farsi hamzeh above ()
+"H=0x0622",          // Farsi A  (آ)
+"J=0x0629",          //te gerd  (ة)
+"K=0x0ab",       //   ( « )
+"L=0x0bb",     //   ( » )
+":=0x03a",     //:
+"\"=0x061b",         //Farsi ; (؛)
+"Z=0x0643",          //arabic kaf  (ك)
+"C=0x0698",          //jhe (ژ)
+"B=0x200c",           //Zero Width Non-Joiner (ZWNJ)    ن‌ن  
+"M=0x0621",          // Farsi hamzeh (ء)
+"<=0x003c",           //<
+">=0x003e",          //>
+"?=0x061f",    //farsi ? (؟)
+
+
+
+
+"!=0x0021",        //!
+"@=0x066c",      // Farsi thousand seperator  (٬)
+"#=0x066b",       // float (٫)
+"$=0xfdfc",       //Rial (﷼)
+"%=0x066a",       //Farsi % (٪)
+"^=0x00d7",       //farsi multiply similar to x (×)
+"&=0x060c",      //Farsi , (،)
+"*=0x002a",      // * 
+"(=0x0028",        //(
+")=0x0029",       //)
+"_=0x0640",       //Farsi keshidegi  (ـ)
+"+=0x002b",      // +
+"|=0x007c",      //|
+
+
+// Numbers  ‫شمارگان‬
+"0x30=0x06f0",       // 0  (۰)
+"0x31=0x06f1",       // 1  (۱)
+"0x32=0x06f2",       // 2  (۲)
+"0x33=0x06f3",       // 3  (۳)
+"0x34=0x06f4",       // 4  (۴)
+"0x35=0x06f5",       // 5  (۵)
+"0x36=0x06f6",       // 6  (۶)
+"0x37=0x06f7",       // 7  (۷)
+"0x38=0x06f8",       // 8  (۸)
+"0x39=0x06f9",       // 9  (۹)
+"\-=0x002d",           //-
+"\\=0x005c",           //\
+
+//This part is not standard
+
+"~=0x200d",           //Zero Width Joiner (ZWJ)   ن‍ن
+"V=0x00f7",           //  (÷)
+
+
+//"iM=0x06C0",   
+//"shift+0x020=0x200C",    //Zero Width Non-Joiner (ZWNJ)
+//I used X as Ctrl key
+"Xj=0x200D",         // ZERO WIDTH JOINER    ت‍ن
+"0x000c=0x200E",        // Ctrl+l LEFT-TO-RIGHT MARK   ت‎ن
+"`=0x200C",       // Ctrl+n ZERO WIDTH NON-JOINER   ت‌ن
+"Xr=0x200F",      // RIGHT-TO-LEFT MARK   ت‏ن
+

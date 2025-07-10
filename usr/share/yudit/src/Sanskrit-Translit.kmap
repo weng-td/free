@@ -1,0 +1,37 @@
+// Sanskrit-Translit.kmap for the Unicode editor Yudit
+// 27 March 2004 Horia Dumitrescu <pandumi@wanadoo.fr>
+
+"a_=0x0101", // a with macron
+"i_=0x012B", // i with macron
+"u_=0x016B", // u with macron
+"r.=0x1E5B", // r with dot below
+"r._=0x1E5D", // r with dot below and macron
+"l.=0x1E37", // l with dot below
+"l._=0x1E39", // l with dot below and macron
+"t.=0x1E6D", // t with dot below
+"d.=0x1E0D", // d with dot below
+"n/=0x1E45", // n with dot above
+"n~=0x00F1", // n with tilde
+"n.=0x1E47", // n with dot below
+"s'=0x015B", // s with acute
+"s.=0x1E63", // s with dot below
+"m.=0x1E43", // m with dot below
+"m/=0x1E41", // m with dot above
+"h.=0x1E25", // h with dot below
+"A_=0x0100", // A with macron
+"I_=0x012A", // I with macron
+"U_=0x016A", // U with macron
+"R.=0x1E5A", // R with dot below
+"R._=0x1E5C", // R with dot below and macron
+"L.=0x1E36", // L with dot below
+"L._=0x1E38", // L with dot below and macron
+"T.=0x1E6C", // T with dot below
+"D.=0x1E0C", // D with dot below
+"N/=0x1E44", // N with dot above
+"N~=0x00D1", // N with tilde
+"N.=0x1E46", // N with dot below
+"S'=0x015A", // S with acute
+"S.=0x1E62", // S with dot below
+"M.=0x1E42", // M with dot below
+"M/=0x1E40", // M with dot above
+"H.=0x1E24", // H with dot below

@@ -1,0 +1,274 @@
+// ArabicBuck.kmap
+
+// Kenneth R. Beesley, 2003-01-19
+// revised 2003-02-06
+// revised 2003-02-11
+// revised 2003-02-17 
+// revixed 2003-02-20 version 1.0
+
+// kmap to allow use of Buckwalter Transliteration
+// (see http://www.xrce.xerox.com/competencies/content-analysis/arabic/info/buckwalter-about.html)
+// for inputting Arabic to yudit (and perhaps someday to qemacs)
+
+//             Philosophy of the Input Method:
+
+// 1.  When ArabicBuck is chosen as the input method, the assumption is 
+//     that the user wants to enter Arabic letters, Arabic punctuation and 
+//     ARABIC-INDIC style digits.
+
+// 2.  To allow input of ASCII (without changing the whole input method back
+//     to 'straight') the Arabic assumption can be overridden temporarily
+//     inside ArabicBuck by preposing a backslash to "literalize" or
+//     ASCII-ize the symbol being typed. 
+ 
+//     Thus when ArabicBuck is active, the user usually types a 'b' to input
+//     0x0628, the Arabic baa' letter; but one can also type \b to get an
+//     ASCII 'b' letter.  Similarly, one can type \, to get an ASCII
+//     comma (rather than an Arabic comma), \3 to get a European/ASCII '3'
+//     rather than an ARABIC-INDIC style 3, etc.
+
+// this file ArabicBuck.kmap and the ArabicBuck.my file produced from it
+// (see below) will be included and ready-to-go in some future release of Yudit.
+
+// For now, this ArabicBuck.kmap file should be copied into the directory
+//    <prefix>/share/yudit/src/
+// or perhaps in your personal ~/.yudit/src/
+//
+// This ArabicBuck.kmap source file must used to create a .my file thus, 
+// using the 'mytool' program supplied with yudit:
+
+// $ mytool -type kmap -kmap ArabicBuck.kmap -rkmap ArabicBuck.kmap -write ArabicBuck.my
+
+// This command should produce ArabicBuck.my, which should be
+// copied into your personal directory ~/.yudit/data/  
+// and perhaps into <prefix>/share/yudit/data/ to make it visible to other users
+
+// yudit directly uses the .my file, not the .kmap file
+
+
+// *********************************************************************
+// *********************************************************************
+// *********************************************************************
+
+// the following mappings are organized (mostly) in Unicode order
+
+// Arabic Punctuation (early in the Unicode chart; more punctuation below)
+" , = 0x060c " , // ARABIC COMMA
+" ; = 0x061b " , // ARABIC SEMICOLON 
+" ? = 0x061f " , // ARABIC QUESTION MARK 
+
+// Letters
+" ' = 0x0621 " , // ARABIC LETTER HAMZA (hamza on the line)
+" | = 0x0622 " , // ARABIC LETTER ALEF WITH MADDA ABOVE
+" > = 0x0623 " , // ARABIC LETTER ALEF WITH HAMZA ABOVE
+" & = 0x0624 " , // ARABIC LETTER WAW WITH HAMZA ABOVE
+" < = 0x0625 " , // ARABIC LETTER ALEF WITH HAMZA BELOW
+" } = 0x0626 " , // ARABIC LETTER YEH WITH HAMZA ABOVE
+
+" A = 0x0627 " , // ARABIC LETTER ALEF (bare 'alif)
+" b = 0x0628 " , // ARABIC LETTER BEH  (baa')
+" p = 0x0629 " , // ARABIC LETTER TEH MARBUTA (taa' marbuuTa)
+" t = 0x062a " , // ARABIC LETTER TEH  (taa')
+" v = 0x062b " , // ARABIC LETTER THEH (thaa')
+" j = 0x062c " , // ARABIC LETTER JEEM (jiim)
+" H = 0x062d " , // ARABIC LETTER HAH  (Haa') voiceless pharyngeal fricative
+" x = 0x062e " , // ARABIC LETTER KHAH (xaa' or khaa') 
+		 // voiceless velar fricative, e.g. German ch in Bach
+" d = 0x062f " , // ARABIC LETTER DAL  (daal)
+" * = 0x0630 " , // ARABIC LETTER THAL (dhaal)
+" r = 0x0631 " , // ARABIC LETTER REH  (raa')
+" z = 0x0632 " , // ARABIC LETTER ZAIN
+" s = 0x0633 " , // ARABIC LETTER SEEN (siin)
+" $ = 0x0634 " , // ARABIC LETTER SHEEN (shiin)
+" S = 0x0635 " , // ARABIC LETTER SAD (Saad)
+" D = 0x0636 " , // ARABIC LETTER DAD (Daad)
+" T = 0x0637 " , // ARABIC LETTER TAH (Taa')
+" Z = 0x0638 " , // ARABIC LETTER ZAH (Zaa' or DHaa')
+" E = 0x0639 " , // ARABIC LETTER AIN (Eayn or cayn)
+	         // voiced pharyngeal fricative
+" g = 0x063a " , // ARABIC LETTER GHAIN
+	         // voiced velar fricative (like Parisian R)
+" _ = 0x0640 " , // ARABIC TATWEEL (taTwiil)
+
+" f = 0x0641 " , // ARABIC LETTER FEH (faa')
+" q = 0x0642 " , // ARABIC LETTER QAF (qaaf)
+" k = 0x0643 " , // ARABIC LETTER KAF (kaaf)
+" l = 0x0644 " , // ARABIC LETTER LAM (laam)
+" m = 0x0645 " , // ARABIC LETTER MEEM (miim)
+" n = 0x0646 " , // ARABIC LETTER NOON (nuun)
+" h = 0x0647 " , // ARABIC LETTER HEH (haa') like English /h/
+" w = 0x0648 " , // ARABIC LETTER WAW (waaw)
+" Y = 0x0649 " , // ARABIC LETTER ALEF MAKSURA ('alif maqSuura)
+" y = 0x064a " , // ARABIC LETTER YEH
+
+" F = 0x064b " , // ARABIC FATHATAN
+" N = 0x064c " , // ARABIC DAMMATAN
+" K = 0x064d " , // ARABIC KASRATAN
+" a = 0x064e " , // ARABIC FATHA
+" u = 0x064f " , // ARABIC DAMMA
+" i = 0x0650 " , // ARABIC KASRA
+" ~ = 0x0651 " , // ARABIC SHADDA
+" o = 0x0652 " , // ARABIC SUKUN
+
+// Arabic-Indic Digits
+// need numeric value on left, just 0, 1, 2 etc.
+// would be interpreted as numbers, not letters
+" 0x30 = 0x0660 " , // ARABIC-INDIC DIGIT ZERO
+" 0x31 = 0x0661 " , // ARABIC-INDIC DIGIT ONE
+" 0x32 = 0x0662 " , // ARABIC-INDIC DIGIT TWO
+" 0x33 = 0x0663 " , // ARABIC-INDIC DIGIT THREE
+" 0x34 = 0x0664 " , // ARABIC-INDIC DIGIT FOUR
+" 0x35 = 0x0665 " , // ARABIC-INDIC DIGIT FIVE
+" 0x36 = 0x0666 " , // ARABIC-INDIC DIGIT SIX
+" 0x37 = 0x0667 " , // ARABIC-INDIC DIGIT SEVEN
+" 0x38 = 0x0668 " , // ARABIC-INDIC DIGIT EIGHT
+" 0x39 = 0x0669 " , // ARABIC-INDIC DIGIT NINE
+
+// Punctuation
+" % = 0x066a " , // ARABIC PERCENT SIGN
+
+// Number punctuation
+" ADS  = 0x066b " , // ARABIC DECIMAL SEPARATOR ("decimal point")
+         // Tim Buckwalter says: 
+	 // this looks like a miniature raa' (0x0631);
+	 // the letter raa' is sometimes used as a decimal
+	 // separator in 8-bit texts
+
+" ATS  = 0x066c " , // ARABIC THOUSANDS SEPARATOR
+         // Tim Buckwalter has never seen this one
+
+" AFPS = 0x066d " , // ARABIC FIVE POINTED STAR
+
+// " Point", and one Extended Arabic Letter
+" ` = 0x0670 " , // ARABIC LETTER SUPERSCRIPT ALEF ("dagger 'alif")
+" { = 0x0671 " , // ARABIC LETTER ALEF WITH WAVY HAMZA ABOVE (waSla on 'alif)
+
+//*******************************************************************
+// Literalized Inputs--to allow the temporary overriding of the
+// mappings shown above, without having to switch to a different input
+// method; input the literal ASCII character by preceding
+// the input with the backslash "literalizer"
+//*******************************************************************
+
+// Literal ASCII punctuation
+" \\ , = 0x002c " , // COMMA
+" \\ ; = 0x003b " , // SEMICOLON 
+" \\ ? = 0x003f " , // QUESTION MARK 
+
+// Literal ASCII letters
+" \\ ' = 0x0027 " , // "literal" ASCII '
+" \\ | = 0x007c " , // "literal" ASCII |
+" \\ > = 0x003e " , // "literal" ASCII >
+" \\ & = 0x0026 " , // "literal" ASCII &
+" \\ < = 0x003c " , // "literal" ASCII <
+" \\ } = 0x007d " , // "literal" ASCII }
+
+" \\ A = 0x0041 " , // "literal" ASCII A
+" \\ b = 0x0062 " , // "literal" ASCII b
+" \\ p = 0x0070 " , // "literal" ASCII p
+" \\ t = 0x0074 " , // "literal" ASCII t
+" \\ v = 0x0076 " , // "literal" ASCII v
+" \\ j = 0x006a " , // "literal" ASCII j
+" \\ H = 0x0048 " , // "literal" ASCII H
+" \\ x = 0x0078 " , // "literal" ASCII x
+" \\ d = 0x0064 " , // "literal" ASCII d
+" \\ * = 0x002a " , // "literal" ASCII *
+" \\ r = 0x0072 " , // "literal" ASCII r
+" \\ z = 0x007a " , // "literal" ASCII z
+" \\ s = 0x0073 " , // "literal" ASCII s
+" \\ $ = 0x0024 " , // "literal" ASCII $
+" \\ S = 0x0053 " , // "literal" ASCII S
+" \\ D = 0x0044 " , // "literal" ASCII D
+" \\ T = 0x0054 " , // "literal" ASCII T
+" \\ Z = 0x005a " , // "literal" ASCII Z
+" \\ E = 0x0045 " , // "literal" ASCII E
+" \\ g = 0x0067 " , // "literal" ASCII g
+
+" \\ _ = 0x005f " , // "literal" ASCII _
+
+" \\ f = 0x0066 " , // "literal" ASCII f
+" \\ q = 0x0071 " , // "literal" ASCII q
+" \\ k = 0x006b " , // "literal" ASCII k
+" \\ l = 0x006c " , // "literal" ASCII l
+" \\ m = 0x006d " , // "literal" ASCII m
+" \\ n = 0x006e " , // "literal" ASCII n
+" \\ h = 0x0068 " , // "literal" ASCII h
+" \\ w = 0x0077 " , // "literal" ASCII w
+" \\ Y = 0x0059 " , // "literal" ASCII Y
+" \\ y = 0x0079 " , // "literal" ASCII y
+
+" \\ F = 0x0046 " , // "literal" ASCII F
+" \\ N = 0x004e " , // "literal" ASCII N
+" \\ K = 0x004b " , // "literal" ASCII K
+" \\ a = 0x0061 " , // "literal" ASCII a
+" \\ u = 0x0075 " , // "literal" ASCII u
+" \\ i = 0x0069 " , // "literal" ASCII i
+" \\ ~ = 0x007e " , // "literal" ASCII ~
+" \\ o = 0x006f " , // "literal" ASCII o
+
+// For ASCII Digits
+" \\ 0x30 = 0x0030 " , // DIGIT ZERO
+" \\ 0x31 = 0x0031 " , // DIGIT ONE
+" \\ 0x32 = 0x0032 " , // DIGIT TWO
+" \\ 0x33 = 0x0033 " , // DIGIT THREE
+" \\ 0x34 = 0x0034 " , // DIGIT FOUR
+" \\ 0x35 = 0x0035 " , // DIGIT FIVE
+" \\ 0x36 = 0x0036 " , // DIGIT SIX
+" \\ 0x37 = 0x0037 " , // DIGIT SEVEN
+" \\ 0x38 = 0x0038 " , // DIGIT EIGHT
+" \\ 0x39 = 0x0039 " , // DIGIT NINE
+
+// Punctuation
+" \\ % = 0x0025 " ,    // PERCENT SIGN
+
+" \\ ` = 0x0060 " ,    // "literal" ASCII `
+" \\ { = 0x007b " ,    // "literal" ASCII {
+
+" \\ \\ = 0x005c " ,   // "literal" ASCII \ (backslash)
+
+
+//***********************************************************************
+//  Joiner and Direction characters
+//***********************************************************************
+
+// Joiners
+" ZWNJ = 0x200c" , //   ZERO WIDTH NON-JOINER
+" ZWJ  = 0x200d" , //   ZERO WIDTH JOINER
+
+// Explicit direction
+" LTR = 0x200e " , //   LEFT-TO-RIGHT MARK
+" RTL = 0x200f " , //   RIGHT-TO-LEFT MARK
+
+// Directional Embedding
+" LRE = 0x202a " ,  // LEFT TO RIGHT EMBEDDING
+" RLE = 0x202b " ,  // RIGHT TO LEFT EMBEDDING
+" PDF = 0x202c " ,  // POP DIRECTIONAL FORMAT
+" LRO = 0x202d " ,  // LEFT TO RIGHT OVERRIDE
+" RLO = 0x202e " ,  // RIGHT TO LEFT OVERRIDE
+
+// Possible future additions for Persian and other "foreign" words/sounds
+// seen in other kmap files for Arabic
+
+// 06af  ARABIC LETTER GAF    Persian, Urdu
+// 0681  ARABIC LETTER HAH WITH HAMZA ABOVE
+// 067e  ARABIC LETTER PEH   Persian, Urdu...
+// 0686  ARABIC LETTER TCHECH Persian
+// 06a4  ARABIC LETTER VEH  in Arabic, for foreign words
+// 0698  ARABIC LETTER JEH  Persian, Urdu
+
+
+// Shaping info (copied from other Arabic kmap files)
+// no longer necessary
+
+//" l | = 0x0644 0x0622" ,
+//" l > = 0x0644 0x0623" ,
+//" l < = 0x0644 0x0625" ,
+//" l A = 0x0644 0x0627" ,
+
+// end of shaping info
+
+// quote from Gaspar, Jan 2003
+//   "Please note: in fact in yudit 2.7.+ you don't need to have it
+//   because additional characters and diacritics will automatically be
+//   added to form a ligature, so in fact the aforementioned ligature
+//   can be entered by simply inputting the components."

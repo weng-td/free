@@ -1,0 +1,3 @@
+/usr/share/menu menu/noawait
+/usr/lib/menu menu/noawait
+/etc/menu-methods menu/noawait

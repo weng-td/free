@@ -1,0 +1,29 @@
+// $Id: Latin.kmap,v 1.1 2003/03/27 22:53:03 Glutexo $
+// send your criticism to glutexo@pikachu.cz
+//
+// modified by Glutexo <glutexo@pikachu.cz>
+// included ā ī ū ē ō Ā Ī Ū Ē Ō acuted letters, Ë ë accents used in some older transcriptions, and á í ú é ó Á Í Ú É Ó used rarely as stress marks
+
+
+"A|=0x0100", // Ā = LATIN CAPITAL LETTER A WITH MACRON
+"A'=0x00C1", // Á = LATIN CAPITAL LETTER A WITH ACUTE
+"E:=0x00CB", // Ë = LATIN CAPITAL LETTER E WITH DIAERESIS
+"E|=0x0112", // Ē = LATIN CAPITAL LETTER E WITH MACRON
+"E'=0x00C9", // É = LATIN CAPITAL LETTER E WITH ACUTE
+"I|=0x012A", // Ī = LATIN CAPITAL LETTER I WITH MACRON
+"I'=0x00CD", // Í = LATIN CAPITAL LETTER I WITH ACUTE
+"O|=0x014C", // Ō = LATIN CAPITAL LETTER O WITH MACRON
+"O'=0x00D3", // Ó = LATIN CAPITAL LETTER O WITH ACUTE
+"U|=0x016A", // Ū = LATIN CAPITAL LETTER U WITH MACRON
+"U'=0x00DA", // Ú = LATIN CAPITAL LETTER U WITH ACUTE
+"a|=0x0101", // ā = LATIN SMALL LETTER A WITH MACRON
+"a'=0x00E1", // á = LATIN SMALL LETTER A WITH ACUTE
+"e:=0x00EB", // ë = LATIN SMALL LETTER E WITH DIAERESIS
+"e|=0x0113", // ē = LATIN SMALL LETTER E WITH MACRON
+"e'=0x00E9", // é = LATIN SMALL LETTER E WITH ACUTE
+"i|=0x012B", // ī = LATIN SMALL LETTER I WITH MACRON
+"i'=0x00ED", // í = LATIN SMALL LETTER I WITH ACUTE
+"o|=0x014D", // ō = LATIN SMALL LETTER O WITH MACRON
+"o'=0x00F3", // ó = LATIN SMALL LETTER O WITH ACUTE
+"u|=0x016B", // ū = LATIN SMALL LETTER U WITH MACRON
+"u'=0x00FA", // ú = LATIN SMALL LETTER U WITH ACUTE

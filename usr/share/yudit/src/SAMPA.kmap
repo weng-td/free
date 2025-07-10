@@ -1,0 +1,133 @@
+// SAMPA.kmap
+// Gaspar Sinai <gsinai@yudit.org>
+// Tokyo 2002-12-06 
+// (Mikulás napja)
+// Typed in by hand from:
+// http://www.phon.ucl.ac.uk/home/sampa/home.htm
+//
+// Version 1.1: g,v added and ligatures broken down.
+//
+// SAMPA (Speech Assessment Methods Phonetic Alphabet) 
+// is a machine-readable phonetic alphabet. It was originally 
+// developed under the ESPRIT project 1541, SAM (Speech Assessment Methods)
+// in 1987-89 by an international group of phoneticians, and was applied 
+// in the first instance to the European Communities languages 
+//  Danish, Dutch, English, French, German, and Italian (by 1989); 
+// later to Norwegian and Swedish (by 1992); and subsequently to Greek, 
+// Portuguese, and Spanish (1993). Under the BABEL project, 
+// it has now been extended to Bulgarian, Estonian, Hungarian, Polish, 
+// and Romanian (1996). 
+//
+//-------------------------------------------------------------------------
+// SAMPA
+// http://www.phon.ucl.ac.uk/home/sampa/home.htm
+//-------------------------------------------------------------------------
+// regex:
+// :'a,'es/\(^.\)^I[01234567899]*[^0]*\(0[ABCDEF0123456789]*\)\, [01234567899]*^I\(.*\)/"\1 = 0x\2", \/\/\3
+//
+// Vowels
+//
+"A = 0x0251", // ɑ open back unrounded, Cardinal 5, Eng. start
+"{ = 0x00E6", // æ - near-open front unrounded, Eng. trap
+"0x36 = 0x0250", // ɐ open schwa, Ger. besser       
+"Q = 0x0252", // ɒ open back rounded, Eng. lot   
+"E = 0x025B", // ɛ open-mid front unrounded, C3, Fr. même    
+"@ =0x0259", // ə schwa, Eng. banana 
+"0x33 = 0x025C", // ɜ long mid central, Eng. nurse
+"I = 0x026A", // ɪ lax close front unrounded, Eng. kit
+"O = 0x0254", // ɔ open-mid back rounded, Eng. thought  
+"0x32 = 0x00F8", // ø close-mid front rounded, Fr. deux   
+"0x39 = 0x0153", // œ open-mid front rounded, Fr. neuf 
+"& = 0x0276", // ɶ open front rounded
+"U = 0x028A", // ʊ lax close back rounded, Eng. foot
+"} = 0x0289", // ʉ close central rounded, Swedish sju
+"V = 0x028C", // ʌ open-mid back unrounded, Eng. strut
+"Y = 0x028F", // ʏ lax [y], Ger. hübsch
+//
+// Consonants
+//
+"B = 0x03B2", // β voiced bilabial fricative, Sp. cabo
+"C = 0x00E7", // ç voiceless palatal fricative, Ger. ich
+"D = 0x00F0", // ð voiced dental fricative, Eng. then
+"G = 0x0263", // ɣ voiced velar fricative, Sp. fuego
+"L = 0x028E", // ʎ palatal lateral, It. famiglia 
+"J = 0x0272", // ɲ palatal nasal, Sp. año 
+"N = 0x014B", // ŋ velar nasal, Eng. thing  
+"R = 0x0281", // ʁ vd. uvular fric. or trill, Fr. roi
+"S = 0x0283", // ʃ voiceless palatoalveolar fricative, Eng. ship
+"T = 0x03B8", // θ voiceless dental fricative, Eng. thin
+"H = 0x0265", // ɥ labial-palatal semivowel, Fr. huit
+"Z = 0x0292", // ʒ vd. palatoalveolar fric., Eng. measure
+"? = 0x0294", // ʔ glottal stop, Ger. Verein, also Danish stød
+//
+// Length, stress and tone marks
+//
+": = 0x02D0", // ː length mark    
+"\" = 0x02C8", // ˈ primary stress 
+"% = 0x02CC", // ˌ secondary stress             
+// These SAMPA tone mark recommendations were based on the IPA
+// as it was up to 1989-90. Since then, however, the IPA has
+// changed its symbols for falling and rising tones. These SAMPA
+// tone marks may now be considered obsolete, having in practice
+// been superseded by the SAMPROSA proposals:
+// http://www.phon.ucl.ac.uk/home/sampa/samprosa.htm
+//
+"` = 0x02E5 0x02E9", // ˥˩ falling tone                 
+"' = 0x02E9 0x02E5", // ˩˥ rising tone                  
+// I need to type Hungarian. This is from:
+// http://www.phon.ucl.ac.uk/home/wells/ipa-unicode.htm
+"aa = 0x0252", // ɒ Hungarian a
+"d' = 0x025F", // ɟ Hungarian gy
+"t' = 0x0063", // c Hungarian ty
+// The latest IPA does not like ligature representation
+// I just put a dot between words to show that
+"t.S = 0x02A7", // ʧ Hungarian cs
+"d.z = 0x02A3", // ʣ Hungarian dz
+"d.Z = 0x02A4", // ʤ Hungarian dz
+"t.s = 0x02A6", // ʦ Hungarian c
+"dZ = 0x0064 0x0361 0x0292", // d͡ʒ Hungarian dzs
+"tS = 0x0074 0x0361 0x0283", // t͡ʃ Hungarian cs
+"dz = 0x0064 0x0361 0x007A", // d͡z Hungarian dz
+"ts = 0x0074 0x0361 0x0073", // t͡s Hungarian c
+"P = 0x028B", // ʋ 
+"g = 0x0261", // ɡ 
+// 
+// Diacritics 
+"0x3D n = 0x0329", // =n inferior stroke
+"O ~ = 0x303", //  superior tilde
+//-------------------------------------------------------------------------
+// X-SAMPA
+//-------------------------------------------------------------------------
+// http://www.phon.ucl.ac.uk/home/sampa/x-sampa.htm
+// 
+// regex:
+// :'a,'es/^\([^^I]*\)[^I ]*\([^^I ]*\)[^0]*\([0123456789ABCDEF]*\).*/"\2 = 0x\3",\/\/ \1/
+//
+"t` = 0x0288", // ʈ retroflex plosive, voiceless
+"d` = 0x0256", // ɖ retroflex plosive, voiced
+"F = 0x0271", // ɱ labiodental nasal
+"n` = 0x0273", // ɳ retroflex nasal
+"J = 0x0272", // ɲ palatal nasal
+"N = 0x014B", // ŋ velar nasal
+"N\\ = 0x0274", // ɴ uvular nasal
+"B\\ = 0x0299", // ʙ bilabial trill
+"R\\ = 0x0280", // ʀ uvular trill
+"0x34 = 0x027E", // ɾ alveolar tap
+"r` = 0x027D", // ɽ retroflex flap
+"p\\ = 0x0278", // ɸ bilabial fricative, voiceless
+"B = 0x03B2", // β bilabial fricative, voiced
+"T = 0x03B8", // θ dental fricative, voiceless
+"D = 0x00F0", // ð dental fricative, voiced
+"S = 0x0283", // ʃ postalveolar fricative, voiceless
+"Z = 0x0292", // ʒ postalveolar fricative, voiced
+"s` = 0x0282", // ʂ retroflex fricative, voiceless
+"z` = 0x0290", // ʐ retroflex fricative, voiced
+"C = 0x00E7", // ç palatal fricative, voiceless
+"j\\ = 0x029D", // ʝ palatal fricative, voiced
+"G = 0x0263", // ɣ velar fricative, voiced
+"X = 0x03C7", // χ uvular fricative, voiceless
+"R = 0x0281", // ʁ uvular fricative, voiced
+"X\\ = 0x0127", // ħ pharyngeal fricative, voiceless
+"?\\ = 0x0295", // ʕ pharyngeal fricative, voiced
+"h\\ = 0x0266", // ɦ glottal fricative, voiced
+//

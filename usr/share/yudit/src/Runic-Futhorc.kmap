@@ -1,0 +1,59 @@
+// Elder Futhark keymap for the Unicode editor Yudit
+// 2003-03-02 david@start.no
+// Codes from http://heima.olivant.fo/~styrheim/tools/runes/rtable.html
+// Alphabet from http://www.irminsul.org/ru/ruasf.gif
+// -----------------------------------------------------------------------
+// Changes: 
+//    Eihwaz mapped to ei to avoid conflict with Ehwaz
+// -----------------------------------------------------------------------
+
+"f=0x16A0",	// ᚠ FEHU
+"u=0x16A2",	// ᚢ URUZ
+"th=0x16A6",	// ᚦ THURISAZ → 00FE þ latin small letter thorn
+"o=0x16A9",	// ᚩ RUNIC LETTER OS O
+"r=0x16B1",	// ᚱ RAIDO
+"c=0x16B3",	// ᚳ RUNIC LETTER CEN
+"g=0x16B7",	// ᚷ GEBO
+"w=0x16B9",	// ᚹ WUNJO → 01BF ƿ latin letter wynn
+"v=0x16B9",	// ᚹ WUNJO → 01BF ƿ latin letter wynn
+
+"h=0x16BA",	// ᚺ HAGLAZ
+"n=0x16BE",	// ᚾ NAUDIZ (Nauthiz)
+"i=0x16C1",	// ᛁ IS (Isa)
+"ge=0x16C4",	// ᛄ RUNIC LETTER GER
+"eo=0x16C7",	// ᛇ RUNIC LETTER IWAZ EOH
+"p=0x16C8",	// ᛈ PERTHO (Perthro)
+"x=0x16C9",	// ᛉ RUNIC LETTER ALGIZ EOLHX
+"s=0x16CB",	// ᛋ RUNIC LETTER SIGEL LONG-BRANCH-SOL S
+
+
+"t=0x16CF",	// ᛏ TIWAZ (Teiwaz)
+"b=0x16D2",	// ᛒ BERKANAN (Berkana)
+"e=0x16D6",	// ᛖ RUNIC LETTER EHWAZ EH E
+"m=0x16D7",	// ᛗ RUNIC LETTER MANNAZ MAN M
+"l=0x16DA",	// ᛚ RUNIC LETTER LAUKAZ LAGU LOGR L
+"ng=0x16DD",	// ᛝ RUNIC LETTER ING
+"ot=0x16DF",	// ᛟ RUNIC LETTER OTHALAN ETHEL O
+"ed=0x16DF",	// ᛟ RUNIC LETTER OTHALAN ETHEL O
+"et=0x16DF",	// ᛟ RUNIC LETTER OTHALAN ETHEL O
+"oe=0x16DF",	// ᛟ RUNIC LETTER OTHALAN ETHEL O
+"d=0x16DE",	// ᛞ RUNIC LETTER DAGAZ DAEG D
+
+"a=0x16AA",	// ᚪ RUNIC LETTER AC A
+"ae=0x16AB",	// ᚫ RUNIC LETTER AESC
+"æ=0x16AB",	// ᚫ RUNIC LETTER AESC
+"y=0x16A3",	// ᚣ RUNIC LETTER YR
+"ea=0x16E0",	// ᛠ RUNIC LETTER EAR
+"io=0x16E1",	// ᛡ RUNIC LETTER IOR
+"ia=0x16E1",	// ᛡ RUNIC LETTER IOR
+
+"k=0x16E3",	// ᛣ RUNIC LETTER CALC
+"ke=0x16E4",	// ᛤ RUNIC LETTER CEALC
+"ce=0x16E4",	// ᛤ RUNIC LETTER CEALC
+"ga=0x16B8",	// ᚸ RUNIC LETTER GAR
+"q=0x16E2",	// ᛢ RUNIC LETTER CWEORTH
+"st=0x16E5",	// ᛥ RUNIC LETTER STAN
+
+".=0x16EB",	// ᛫ RUNIC SINGLE PUNCTUATION
+":=0x16EC",	// ᛬ RUNIC MULTIPLE PUNCTUATION
+"+=0x16ED",	// ᛭ RUNIC CROSS PUNCTUATION

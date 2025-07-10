@@ -1,0 +1,80 @@
+//Baybayin.kmap for the Unicode editor Yudit
+//used to input Tagalog unicode script
+//Roel P. Cantada <rcantada2002@yahoo.com>
+//This keymap is released under the terms of the 
+//GNU General Public License ver. 2
+//
+
+//vowels (patinig)
+
+"a=0x1700",
+"A=0x1700",
+"O=0x1702",
+"U=0x1702",
+"E=0x1701",
+"I=0x1701",
+
+//consonants (katinig)
+
+"H=0x1711",
+"h=0x1711",
+"P=0x1709",
+"p=0x1709",
+"K=0x1703",
+"k=0x1703",
+"S=0x1710",
+"s=0x1710",
+"L=0x170E",
+"l=0x170E",
+"T=0x1706",
+"t=0x1706",
+"N=0x1708",
+"n=0x1708",
+"B=0x170A",
+"b=0x170A",
+"M=0x170B",
+"m=0x170B",
+"G=0x1704",
+"g=0x1704",
+"D=0x1707",
+"d=0x1707",
+"R=0x1707",
+"r=0x1707",
+"Y=0x170C",
+"y=0x170C",
+"J=0x1705",
+"j=0x1705",
+"W=0x170F",
+"w=0x170F",
+
+
+//vowel marks (kudlit)
+
+"o=0x1713",
+"u=0x1713",
+"e=0x1712",
+"i=0x1712",
+
+
+//vowel killer (birama)
+
+"V=0x1714",
+"v=0x1714",
+
+
+//punctuation marks
+//tagalog comma (pahinga)
+
+"F=0x1735",
+"f=0x1735",
+
+
+//tagalog period (wakas)
+
+"C=0x1736",
+"c=0x1736",
+
+
+
+
+

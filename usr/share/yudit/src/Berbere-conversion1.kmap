@@ -1,0 +1,30 @@
+// This keymap is for conversion of texts written with fonts
+// that have substituted iso-8859-1 glyphs with Berber glyphs
+// comments describe individual conversions
+"##version = version_2002_11_25_01",
+"##auteur = Bruno_Cauchy_Lefebvre",
+"##email = bb.lefebvre@free.fr",
+"0x00a3 =0x0194",	// £ -> Ɣ
+"$      =0x0263",	// $ -> ɣ
+"O      =G 0x0306",	// O -> Ğ
+"o      =g 0x0306",	// o -> ğ
+"P      =T 0x0327",	// P -> Ţ
+"p      =t 0x0327",	// p -> ţ
+"V      =D 0x0323",	// V -> Ḍ
+"v      =d 0x0323",	// v -> ḍ
+"0x008a =S 0x0306",	// ? -> S̆
+"0x009a =s 0x0306",	// ? -> s̆
+"0x00c4 =Z 0x0327",	// Ä -> Z̧
+"0x00e4 =z 0x0327",	// ä -> z̧
+"0x00cb =H 0x0323",	// Ë -> Ḥ Precomposed: U+1E24
+"0x00ea =h 0x0323",	// ê -> ḥ Precomposed: U+1E25
+"0x00cf =T 0x0323",	// Ï -> Ṭ Precomposed: U+1E6C
+"0x00ee =t 0x0323",	// î -> ṭ Precomposed: U+1E6D
+"0x00d6 =R 0x0323",	// Ö -> Ṛ Precomposed: U+1E5A
+"0x00f4 =r 0x0323",	// ô -> ṛ Precomposed: U+1E5B
+"0x00dc =S 0x0323",	// Ü -> Ṣ Precomposed: U+1E62
+"0x00fb =s 0x0323",	// û -> ṣ Precomposed: U+1E63
+"0x00e0 =C 0x0306",	// à -> C̆
+"0x00e7 =c 0x0306",	// ç -> c̆
+"0x00e8 =Z 0x0323",	// é -> Ẓ Precomposed: U+1E92
+"0x00e9 =z 0x0323",	// è -> ẓ Precomposed: U+1E93

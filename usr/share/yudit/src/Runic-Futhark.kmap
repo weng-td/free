@@ -1,0 +1,39 @@
+// Elder Futhark keymap for the Unicode editor Yudit
+// 2003-03-02 david@start.no
+// Codes from http://heima.olivant.fo/~styrheim/tools/runes/rtable.html
+// Alphabet from http://members.aol.com/JehanaS/futhark/
+// -----------------------------------------------------------------------
+// Changes: 
+//    Eihwaz mapped to ei to avoid conflict with Ehwaz
+// -----------------------------------------------------------------------
+
+"f=0x16A0",	// ᚠ FEHU
+"u=0x16A2",	// ᚢ URUZ
+"th=0x16A6",	// ᚦ THURISAZ → 00FE þ latin small letter thorn
+"a=0x16A8",	// ᚨ ANSUZ
+"r=0x16B1",	// ᚱ RAIDO
+"k=0x16B2",	// ᚲ KAUNA (Kenaz)
+"g=0x16B7",	// ᚷ GEBO
+"w=0x16B9",	// ᚹ WUNJO → 01BF ƿ latin letter wynn
+"v=0x16B9",	// ᚹ WUNJO → 01BF ƿ latin letter wynn
+"h=0x16BA",	// ᚺ HAGLAZ
+"n=0x16BE",	// ᚾ NAUDIZ (Nauthiz)
+"i=0x16C1",	// ᛁ IS (Isa)
+"j=0x16C3",	// ᛃ JERAN (Jera)
+"y=0x16C3",	// ᛃ JERAN (Jera)
+"ei=0x16C7",	// ᛇ IWAZ (Eihwaz)
+"p=0x16C8",	// ᛈ PERTHO (Perthro)
+"z=0x16C9",	// ᛉ ALGIZ
+"s=0x16CA",  	// ᛊ SOWILO (Sowulo) //LOOKS SLIGHLY DIFFERENT ON THE PAGE
+"t=0x16CF",	// ᛏ TIWAZ (Teiwaz)
+"b=0x16D2",	// ᛒ BERKANAN (Berkana)
+"e=0x16D6",	// ᛖ EHWAZ
+"m=0x16D7",	// ᛗ MANNAZ
+"l=0x16DA",	// ᛚ LAUKAZ LAGU (Laguz)
+"ng=0x16DC",	// ᛜ INGWAZ (Inguz)
+"o=0x16DF",	// ᛟ OTHALAN (Othila)
+"d=0x16DE",	// ᛞ DAGAZ
+
+".=0x16EB",	// ᛫ RUNIC SINGLE PUNCTUATION
+":=0x16EC",	// ᛬ RUNIC MULTIPLE PUNCTUATION
+"+=0x16ED",	// ᛭ RUNIC CROSS PUNCTUATION

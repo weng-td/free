@@ -1,0 +1,122 @@
+// GeorgianB
+//
+// 2003-01-27 Kenneth R. Beesley <ken.beesley@xrce.xerox.com>
+// revised 2003-03-01 version 1.0
+
+// GeorgianB.kmap is a source file defining an input method for Georgian,
+// for use in the Yudit editor and perhaps someday in qemacs.
+// To be used by the Yudit editor, a GeorgianB.my file must be generated 
+// from Georgian.kmap (see instructions below).
+
+// In some future version of Yudit, this GeorgianB.kmap file and the
+// derived GeorgianB.my file may be pre-installed in Yudit and all ready
+// to go.
+
+//  Overall Philosophy of this Input Method
+
+// 1.  Glottal ejective consonants are entered by typing the consonant
+//     followed by a single quote:  p'  t'  k'  q'
+// 2.  Type S to enter esh, Z to enter zhe, as in TIPA shortcuts
+// 3.  Type ts and dz to enter the alveolar affricates
+// 4.  Type tS and dZ to enter the alveo-palatal affricates
+// 5.  Type ts' and tS' to enter the glottal-ejective versions of ts and tS
+
+
+//   Making and Installing the .my File Yourself
+
+// This will be necessary until yudit is delivered with
+// GeorgianB already installed.
+
+// For now, this GeorgianB.kmap file should reside in
+// your personal directory ~/.yudit/src/
+// and perhaps in <prefix>/share/yudit/src/ to make it
+// accessible to other users on your system.  (The <prefix> is,
+// by default, /usr, but the <prefix> can be manually specified
+// when yudit is first installed.  Type 'which yudit' at the 
+// command-line prompt to see where yudit resides on your system.)
+
+// The GeorgianB.kmap source file must used to create a .my file thus,
+// using the 'mytool' facility supplied with yudit:
+//
+// $ mytool -type kmap -kmap GeorgianB.kmap -rkmap GeorgianB.kmap -write GeorgianB.my
+
+// This command should produce GeorgianB.my, which you should then manually
+// copy into your personal ~/.yudit/data/  or perhaps into <prefix>/share/yudit/data/
+// to make it accessible to other users on the same system.
+
+// yudit directly uses the .my file, which is a binary file; not the .kmap file, which
+// is a (semi-)human-readable source file
+
+" a    = 0x10D0 " ,	//  GEORGIAN LETTER AN
+" b    = 0x10D1 " ,	//  GEORGIAN LETTER BAN
+" g    = 0x10D2 " ,	//  GEORGIAN LETTER GAN
+" d    = 0x10D3 " ,	//  GEORGIAN LETTER DON
+" e    = 0x10D4 " ,	//  GEORGIAN LETTER EN
+" v    = 0x10D5 " ,	//  GEORGIAN LETTER VIN
+" z    = 0x10D6 " ,	//  GEORGIAN LETTER ZEN
+" t    = 0x10D7 " ,	//  GEORGIAN LETTER TAN (aspirated t)
+" i    = 0x10D8 " ,	//  GEORGIAN LETTER IN
+" k '  = 0x10D9 " ,	//  GEORGIAN LETTER KAN (glottal ejective k')
+" l    = 0x10DA " ,	//  GEORGIAN LETTER LAS
+" m    = 0x10DB " ,	//  GEORGIAN LETTER MAN
+" n    = 0x10DC " ,	//  GEORGIAN LETTER NAR
+" o    = 0x10DD " ,	//  GEORGIAN LETTER ON
+" p '  = 0x10DE " ,	//  GEORGIAN LETTER PAR (glottal ejective p')
+" Z    = 0x10DF " ,	//  GEORGIAN LETTER ZHAR
+" r    = 0x10E0 " ,	//  GEORGIAN LETTER RAE
+" s    = 0x10E1 " ,	//  GEORGIAN LETTER SAN
+" t '  = 0x10E2 " ,	//  GEORGIAN LETTER TAR (glottal ejective t')
+" u    = 0x10E3 " ,	//  GEORGIAN LETTER UN
+" p    = 0x10E4 " ,	//  GEORGIAN LETTER PHAR (aspirated p)
+" k    = 0x10E5 " ,	//  GEORGIAN LETTER KHAR (aspirated k)
+
+" R    = 0x10E6 " ,	//  GEORGIAN LETTER GHAN (voiced velar fricative)
+" q '  = 0x10E7 " ,	//  GEORGIAN LETTER QAR (glottal ejective q', 
+                        //   no aspirated q to contrast)
+" S    = 0x10E8 " ,	//  GEORGIAN LETTER SHIN (voiceless alveo-palatal 
+                        //   sibilant, as in "ship")
+" tS   = 0x10E9 " ,	//  GEORGIAN LETTER CHIN (voiceless alveo-palatal 
+                        //   affricate, as in "chip")
+" ts   = 0x10EA " ,	//  GEORGIAN LETTER CAN (voiceless alveolar
+                        //   affricate, as in "tsetse")
+" dz   = 0x10EB " ,	//  GEORGIAN LETTER JIL (voiced alveolar
+                        //   affricate, as in "beDS")
+" ts ' = 0x10EC " ,	//  GEORGIAN LETTER CIL (glottal ejective
+                        //   voiceless alveolar affricate ts')
+" tS ' = 0x10ED " ,	//  GEORGIAN LETTER CHAR (glottal ejective 
+                        //   voiceless alveo-palatal affricate tS')
+" x    = 0x10EE " ,	//  GEORGIAN LETTER XAN (voiceless velar 
+                        //   fricative)
+" dZ   = 0x10EF " ,	//  GEORGIAN LETTER JHAN (voiced alveolar 
+                        //   affricate, as in "judge")
+" h    = 0x10F0 " ,	//  GEORGIAN LETTER HAE
+
+// Archaic Georgian, no longer used
+" HE  = 0x10F1 " ,	//  GEORGIAN LETTER HE
+" HIE = 0x10F2 " ,	//  GEORGIAN LETTER HIE
+" WE  = 0x10F3 " ,	//  GEORGIAN LETTER WE
+" HAR = 0x10F4 " ,	//  GEORGIAN LETTER HAR
+" HOE = 0x10F5 " ,	//  GEORGIAN LETTER HOE
+" FI  = 0x10F6 " ,	//  GEORGIAN LETTER FI
+
+// for Mingrelian and Svan languages
+" YN    = 0x10F7 " , 	//  GEORGIAN LETTER YN
+" ELIFI = 0x10F8 " ,	//  GEORGIAN LETTER ELIFI
+
+" PAR     = 0x10FB " , // GEORGIAN PARAGRAPH SEPARATOR
+
+// forced literals, to block collapsing as part of a digraph or trigraph
+
+// these four unlikely to be needed
+" \\ p = 0x10E4 " , // force PHAR, block ejective PAR
+" \\ t = 0x10D7 " , // force TAN, block ejective TAR
+" \\ k = 0x10E5 " , // force KHAR, block ejective KAN
+
+// these could be needed, e.g. to enter d-followed-by-z as opposed to 'dz'
+" \\ d = 0x10D3 " , // force DON 
+" \\ s = 0x10E1 " , // force SAN
+" \\ z = 0x10D6 " , // force ZEN
+" \\ S = 0x10E8 " , // force SHIN
+" \\ Z = 0x10DF " , // force ZHAR
+
+" \\ ' = 0x0027 " , // force single quote
